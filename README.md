@@ -1,4 +1,8 @@
-##🎙️ Speech Emotion Recognition using Deep Learning & Attention Mechanism
+
+
+---
+
+# 🎙️ Speech Emotion Recognition using Deep Learning & Attention Mechanism
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python"/>
@@ -11,7 +15,7 @@
 
 ---
 
-🧠 What Does This Do?
+## 🧠 What Does This Do?
 
 Ever wondered if a machine could tell if you're happy, sad, angry or neutral just by listening to your voice? That's exactly what this project does.
 
@@ -19,7 +23,7 @@ It takes raw audio files, extracts meaningful acoustic features (MFCCs), and fee
 
 ---
 
-🎯 Emotions Classified
+## 🎯 Emotions Classified
 
 | Emotion Code | Emotion | Label |
 |-------------|---------|-------|
@@ -30,7 +34,7 @@ It takes raw audio files, extracts meaningful acoustic features (MFCCs), and fee
 
 ---
 
-Features
+## ✨ Features
 
 - 🎵 **MFCC Feature Extraction** — Extracts 40 Mel Frequency Cepstral Coefficients from each audio file using Librosa, capturing the tonal and spectral characteristics of speech
 - 🧠 **Baseline Neural Network** — A clean 2-layer fully connected network as the foundation model
@@ -38,7 +42,9 @@ Features
 - 📊 **Side-by-Side Comparison** — Both models trained and evaluated on the same data for a fair comparison
 - ⚡ **End-to-End Pipeline** — From raw `.wav` files all the way to emotion prediction in a single script
 
-🏗️ Model Architecture
+---
+
+## 🏗️ Model Architecture
 
 ### Model 1 — Baseline Neural Network
 ```
@@ -53,7 +59,7 @@ Linear Layer (64 → 4)
 Output: Emotion Class (0-3)
 ```
 
-### Model 2 — Neural Network with Attention 
+### Model 2 — Neural Network with Attention ✨
 ```
 Input: 40 MFCC Features
         ↓
@@ -70,7 +76,9 @@ Output: Emotion Class (0-3)
 
 The attention layer learns **which of the 40 MFCC features matter most** for each emotion — giving the model interpretability alongside performance.
 
-📊 Results
+---
+
+## 📊 Results
 
 | Model | Accuracy |
 |-------|---------|
@@ -79,7 +87,9 @@ The attention layer learns **which of the 40 MFCC features matter most** for eac
 
 > The attention model consistently learns better feature representations, showing the value of learned feature weighting even in shallow networks.
 
-🛠️ Tech Stack
+---
+
+## 🛠️ Tech Stack
 
 | Component | Technology |
 |-----------|-----------|
@@ -92,7 +102,7 @@ The attention layer learns **which of the 40 MFCC features matter most** for eac
 
 ---
 
-📁 Project Structure
+## 📁 Project Structure
 
 ```
 emotion-recognition/
@@ -105,7 +115,7 @@ emotion-recognition/
 
 ---
 
-Run It Yourself
+## 🏃 Run It Yourself
 
 **1. Clone the repo**
 ```bash
@@ -134,7 +144,9 @@ data/
 python emotion_model.py
 ```
 
-🔮 Future Improvements
+---
+
+## 🔮 Future Improvements
 
 - [ ] Add all 8 RAVDESS emotions (fear, disgust, surprise, calm)
 - [ ] Replace feedforward network with LSTM or CNN for sequential audio modelling
@@ -144,7 +156,9 @@ python emotion_model.py
 - [ ] Experiment with spectrograms and mel-spectrograms as features
 - [ ] Export model to ONNX for deployment
 
-📚 What I Learned
+---
+
+## 📚 What I Learned
 
 - How to process and extract features from raw audio files using Librosa
 - Implementing custom neural network layers in PyTorch from scratch
@@ -152,14 +166,20 @@ python emotion_model.py
 - End-to-end ML pipeline from data loading to model evaluation
 - The challenges of emotion recognition — why it's a hard problem even for humans
 
-Note on Dataset
+---
+
+## ⚠️ Note on Dataset
 
 The `data/` folder containing RAVDESS audio files is **not included** in this repository due to file size constraints. Please download it directly from Kaggle using the link above.
 
-Acknowledgements
+---
+
+## 🙏 Acknowledgements
 
 - [RAVDESS Dataset](https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio) — Ryerson Audio-Visual Database of Emotional Speech and Song
 - [Librosa](https://librosa.org) — Audio and music processing in Python
 - [PyTorch](https://pytorch.org) — Open source machine learning framework
+
+---
 
 <p align="center">Made with ❤️ and a lot of audio files</p>
