@@ -1,4 +1,4 @@
-🎙️ Speech Emotion Recognition using Deep Learning & Attention Mechanism
+##🎙️ Speech Emotion Recognition using Deep Learning & Attention Mechanism
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python"/>
